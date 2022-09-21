@@ -4,7 +4,8 @@
   "description": "Node modules for rooibos-testing",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build-tests": "npx bsc"
   },
   "repository": {
     "type": "git",
@@ -22,5 +23,8 @@
   "devDependencies": {
     "brighterscript": "^0.57.2",
     "rooibos-roku": "^5.2.2"
+  },
+  "dependencies": {
+    "undent": "^0.1.0"
   }
 }
