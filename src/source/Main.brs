@@ -6,7 +6,7 @@
 '*************************************************************
 
 sub Main()
-    print "in showChannelSGScreen"
+    Rooibos_init()
     'Indicate this is a Roku SceneGraph application'
     screen = CreateObject("roSGScreen")
     m.port = CreateObject("roMessagePort")
