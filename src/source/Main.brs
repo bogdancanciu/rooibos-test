@@ -6,7 +6,6 @@
 '*************************************************************
 
 sub Main()
-    Rooibos_init()
     'Indicate this is a Roku SceneGraph application'
     screen = CreateObject("roSGScreen")
     m.port = CreateObject("roMessagePort")
@@ -16,6 +15,7 @@ sub Main()
     scene = screen.CreateScene("HelloWorld")
     screen.show()
 
+    Rooibos_init()
     while(true)
         msg = wait(0, m.port)
         msgType = type(msg)
